@@ -87,8 +87,8 @@ Mihaly Csikszentmihalyi 在 1990 年提出心流理论，描述了一种**完全
 
 ## 🔗 延伸阅读
 
-- [自我决定理论](/card/sdt) — 心流与胜任感的关系
-- [峰终定律](/card/peak-end) — 体验记忆如何影响心流评价
+- [自我决定理论](/user-insight-kb/card/sdt) — 心流与胜任感的关系
+- [峰终定律](/user-insight-kb/card/peak-end) — 体验记忆如何影响心流评价
 
 ## 💡 个人洞察
 

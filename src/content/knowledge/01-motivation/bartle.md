@@ -86,8 +86,8 @@ Richard Bartle 在 1996 年观察 MUD 游戏（文字网游）时发现，玩家
 
 ## 🔗 延伸阅读
 
-- [自我决定理论](/card/sdt) — Bartle 分类的理论基础
-- [Hexad玩家动机模型](/card/hexad) — Bartle 分类的现代扩展
+- [自我决定理论](/user-insight-kb/card/sdt) — Bartle 分类的理论基础
+- [Hexad玩家动机模型](/user-insight-kb/card/hexad) — Bartle 分类的现代扩展
 
 ## 💡 个人洞察
 
