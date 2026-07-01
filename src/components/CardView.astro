@@ -12,6 +12,7 @@ interface Props {
 const { id, title, module, tags, difficulty, status, excerpt } = Astro.props;
 
 const slug = id.split('/').pop() || id;
+const base = import.meta.env.BASE_URL;
 
 const statusColors: Record<string, string> = {
   draft: 'bg-yellow-500/20 text-yellow-400 border-yellow-500/30',
@@ -27,7 +28,7 @@ const difficultyColors: Record<string, string> = {
 ---
 
 <a
-  href={`/card/${slug}`}
+  href={`${base}card/${slug}`}
   class="block bg-[#2a2a3e] border border-[#334155] rounded-xl p-5 hover:border-[#6366f1]/50 hover:bg-[#2a2a3e]/80 transition-all duration-200 group"
 >
   <div class="flex items-start justify-between gap-2 mb-3">
