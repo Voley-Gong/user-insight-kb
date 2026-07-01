@@ -89,8 +89,8 @@ date: "2024-01-20"
 
 ## 🔗 延伸阅读
 
-- [习惯回路模型](/card/habit-loop) — 留存的底层行为机制
-- [自我决定理论](/card/sdt) — 归属感如何驱动留存
+- [习惯回路模型](/user-insight-kb/card/habit-loop) — 留存的底层行为机制
+- [自我决定理论](/user-insight-kb/card/sdt) — 归属感如何驱动留存
 
 ## 💡 个人洞察
 

@@ -86,8 +86,8 @@ date: "2024-01-15"
 
 ## 🔗 延伸阅读
 
-- [Bartle玩家分类](/card/bartle) — 从需求角度理解不同玩家类型
-- [心流理论](/card/flow) — 胜任感如何与心流结合
+- [Bartle玩家分类](/user-insight-kb/card/bartle) — 从需求角度理解不同玩家类型
+- [心流理论](/user-insight-kb/card/flow) — 胜任感如何与心流结合
 
 ## 💡 个人洞察
 
