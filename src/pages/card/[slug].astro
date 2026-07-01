@@ -1,0 +1,64 @@
+---
+import KnowledgeLayout from '../../layouts/KnowledgeLayout.astro';
+import Checklist from '../../components/Checklist.astro';
+import RelatedCards from '../../components/RelatedCards.astro';
+import { getCollection, render } from 'astro:content';
+
+export async function getStaticPaths() {
+  const allCards = await getCollection('knowledge');
+  return allCards.map((card) => ({
+    params: { slug: card.id.replace('.md', '').split('/').pop() },
+    props: { card },
+  }));
+}
+
+const { card } = Astro.props;
+const { Content } = await render(card);
+
+const difficultyColors: Record<string, string> = {
+  '基础': 'bg-emerald-500/20 text-emerald-400 border-emerald-500/30',
+  '进阶': 'bg-amber-500/20 text-amber-400 border-amber-500/30',
+  '高级': 'bg-red-500/20 text-red-400 border-red-500/30',
+};
+
+const statusColors: Record<string, string> = {
+  draft: 'bg-yellow-500/20 text-yellow-400 border-yellow-500/30',
+  review: 'bg-blue-500/20 text-blue-400 border-blue-500/30',
+  published: 'bg-green-500/20 text-green-400 border-green-500/30',
+};
+---
+
+<KnowledgeLayout title={card.data.title}>
+  <div class="mb-6">
+    <a href="/" class="text-sm text-[#818cf8] hover:text-[#6366f1] mb-2 inline-block">← 返回首页</a>
+    <div class="flex items-center gap-3 mb-3">
+      <h1 class="text-3xl font-bold text-white">{card.data.title}</h1>
+    </div>
+    <div class="flex flex-wrap items-center gap-2 mb-4">
+      <span class={`text-xs px-2 py-0.5 rounded-full border ${statusColors[card.data.status]}`}>
+        {card.data.status}
+      </span>
+      <span class={`text-xs px-2 py-0.5 rounded-full border ${difficultyColors[card.data.difficulty]}`}>
+        {card.data.difficulty}
+      </span>
+      <span class="text-xs text-[#64748b]">·</span>
+      <span class="text-xs text-[#64748b]">{card.data.module}</span>
+      <span class="text-xs text-[#64748b]">·</span>
+      <span class="text-xs text-[#64748b]">作者: {card.data.author}</span>
+      <span class="text-xs text-[#64748b]">·</span>
+      <span class="text-xs text-[#64748b]">{card.data.date.toLocaleDateString('zh-CN')}</span>
+    </div>
+    <div class="flex flex-wrap gap-1.5 mb-4">
+      {card.data.tags.map((tag) => (
+        <span class="text-xs px-2 py-0.5 rounded bg-[#363650] text-[#94a3b8]">{tag}</span>
+      ))}
+    </div>
+    {(card.data.prerequisites.length > 0 || card.data.related.length > 0) && (
+      <RelatedCards prerequisites={card.data.prerequisites} related={card.data.related} />
+    )}
+  </div>
+
+  <article class="prose">
+    <Content />
+  </article>
+</KnowledgeLayout>

@@ -1,0 +1,53 @@
+---
+import KnowledgeLayout from '../../layouts/KnowledgeLayout.astro';
+import CardView from '../../components/CardView.astro';
+import { getCollection } from 'astro:content';
+import { MODULES } from '../../data/modules';
+
+export async function getStaticPaths() {
+  return MODULES.map((m) => ({
+    params: { slug: m.slug },
+    props: { moduleData: m },
+  }));
+}
+
+const { moduleData: mod } = Astro.props;
+const allCards = await getCollection('knowledge');
+
+const moduleCards = allCards.filter((c) => {
+  const cardModule = c.data.module;
+  return cardModule === mod.title || c.id.startsWith(mod.slug.replace('-', '/'));
+});
+---
+
+<KnowledgeLayout title={mod.title}>
+  <div class="mb-8">
+    <a href="/" class="text-sm text-[#818cf8] hover:text-[#6366f1] mb-2 inline-block">← 返回首页</a>
+    <div class="flex items-center gap-3 mb-2">
+      <span class="text-4xl">{mod.icon}</span>
+      <h1 class="text-3xl font-bold text-white">{mod.title}</h1>
+    </div>
+    <p class="text-[#94a3b8] text-lg">{mod.description}</p>
+    <p class="text-sm text-[#64748b] mt-2">共 {moduleCards.length} 张知识卡片</p>
+  </div>
+
+  {moduleCards.length > 0 ? (
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      {moduleCards.map((card) => (
+        <CardView
+          id={card.id.replace('.md', '')}
+          title={card.data.title}
+          module={card.data.module}
+          tags={card.data.tags}
+          difficulty={card.data.difficulty}
+          status={card.data.status}
+        />
+      ))}
+    </div>
+  ) : (
+    <div class="bg-[#2a2a3e] border border-[#334155] rounded-xl p-8 text-center">
+      <p class="text-[#94a3b8] text-lg mb-2">该模块暂无内容</p>
+      <p class="text-sm text-[#64748b]">AI Agents 正在持续添加知识卡片...</p>
+    </div>
+  )}
+</KnowledgeLayout>

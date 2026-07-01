@@ -1,0 +1,46 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = '用户洞察知识库 — 从心理学到游戏设计' } = Astro.props;
+---
+
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <title>{title} | 用户洞察知识库</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body class="bg-[#1e1e2e] text-[#e2e8f0]">
+    <nav class="border-b border-[#334155] bg-[#1e1e2e]/80 backdrop-blur-sm sticky top-0 z-50">
+      <div class="max-w-6xl mx-auto px-4 h-14 flex items-center justify-between">
+        <a href="/" class="flex items-center gap-2 text-white font-semibold text-lg hover:text-[#818cf8] transition-colors">
+          <span class="text-2xl">🧠</span>
+          <span>用户洞察知识库</span>
+        </a>
+        <div class="flex items-center gap-4 text-sm text-[#94a3b8]">
+          <a href="/" class="hover:text-white transition-colors">首页</a>
+          <span class="text-[#334155]">|</span>
+          <span>Powered by AI Agents</span>
+        </div>
+      </div>
+    </nav>
+    <main class="max-w-6xl mx-auto px-4 py-8">
+      <slot />
+    </main>
+    <footer class="border-t border-[#334155] mt-16">
+      <div class="max-w-6xl mx-auto px-4 py-6 text-center text-sm text-[#94a3b8]">
+        用户洞察知识库 · 持续迭代中 · 由 AI Agents 协作构建
+      </div>
+    </footer>
+  </body>
+</html>

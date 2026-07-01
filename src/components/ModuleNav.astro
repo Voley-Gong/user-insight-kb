@@ -1,0 +1,33 @@
+---
+interface Module {
+  slug: string;
+  title: string;
+  icon: string;
+  description: string;
+  count: number;
+}
+
+interface Props {
+  modules: Module[];
+}
+
+const { modules } = Astro.props;
+---
+
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+  {modules.map((mod) => (
+    <a
+      href={`/module/${mod.slug}`}
+      class="block bg-[#2a2a3e] border border-[#334155] rounded-xl p-5 hover:border-[#6366f1]/50 transition-all duration-200 group"
+    >
+      <div class="text-3xl mb-3">{mod.icon}</div>
+      <h3 class="text-white font-semibold mb-1 group-hover:text-[#818cf8] transition-colors">
+        {mod.title}
+      </h3>
+      <p class="text-[#94a3b8] text-sm mb-3 leading-relaxed">{mod.description}</p>
+      <div class="text-xs text-[#64748b]">
+        {mod.count} 张知识卡片
+      </div>
+    </a>
+  ))}
+</div>

@@ -1,0 +1,31 @@
+---
+interface Props {
+  prerequisites: string[];
+  related: string[];
+}
+
+const { prerequisites, related } = Astro.props;
+---
+
+<div class="flex flex-wrap gap-4">
+  {prerequisites.length > 0 && (
+    <div class="bg-[#2a2a3e] border border-[#334155] rounded-lg px-4 py-2">
+      <span class="text-xs text-[#64748b] mr-2">前置知识:</span>
+      {prerequisites.map((p) => (
+        <a href={`/card/${p}`} class="text-sm text-[#818cf8] hover:text-[#6366f1] mr-2">
+          {p}
+        </a>
+      ))}
+    </div>
+  )}
+  {related.length > 0 && (
+    <div class="bg-[#2a2a3e] border border-[#334155] rounded-lg px-4 py-2">
+      <span class="text-xs text-[#64748b] mr-2">相关知识:</span>
+      {related.map((r) => (
+        <a href={`/card/${r}`} class="text-sm text-[#818cf8] hover:text-[#6366f1] mr-2">
+          {r}
+        </a>
+      ))}
+    </div>
+  )}
+</div>

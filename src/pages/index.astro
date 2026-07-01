@@ -1,0 +1,71 @@
+---
+import KnowledgeLayout from '../layouts/KnowledgeLayout.astro';
+import ModuleNav from '../components/ModuleNav.astro';
+import CardView from '../components/CardView.astro';
+import { getCollection } from 'astro:content';
+import { MODULES } from '../data/modules';
+
+const allCards = await getCollection('knowledge');
+const publishedCards = allCards.filter((c) => c.data.status === 'published');
+
+const modules = MODULES.map((m) => ({
+  ...m,
+  count: allCards.filter((c) => c.id.startsWith(m.slug.replace('-', '/')) || c.data.module === m.title).length,
+}));
+
+const recentCards = allCards
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+  .slice(0, 6);
+---
+
+<KnowledgeLayout title="首页">
+  <div class="mb-10">
+    <h1 class="text-3xl font-bold text-white mb-3">用户洞察知识库</h1>
+    <p class="text-[#94a3b8] text-lg max-w-2xl">
+      从心理学理论到游戏设计实践，以<strong class="text-white">问题驱动</strong>的方式系统化积累用户洞察。
+      每张知识卡片遵循 <code class="text-[#818cf8]">问题 → 理论 → 机制 → 应用 → 验证</code> 的逻辑链条。
+    </p>
+  </div>
+
+  <section class="mb-12">
+    <h2 class="text-xl font-semibold text-white mb-4">知识模块</h2>
+    <ModuleNav modules={modules} />
+  </section>
+
+  <section class="mb-12">
+    <div class="flex items-center justify-between mb-4">
+      <h2 class="text-xl font-semibold text-white">最近更新</h2>
+      <span class="text-sm text-[#64748b]">共 {allCards.length} 张卡片</span>
+    </div>
+    {recentCards.length > 0 ? (
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        {recentCards.map((card) => (
+          <CardView
+            id={card.id.replace('.md', '')}
+            title={card.data.title}
+            module={card.data.module}
+            tags={card.data.tags}
+            difficulty={card.data.difficulty}
+            status={card.data.status}
+          />
+        ))}
+      </div>
+    ) : (
+      <div class="bg-[#2a2a3e] border border-[#334155] rounded-xl p-8 text-center">
+        <p class="text-[#94a3b8]">暂无内容，等待 AI Agents 填充知识卡片...</p>
+      </div>
+    )}
+  </section>
+
+  <section class="bg-[#2a2a3e] border border-[#334155] rounded-xl p-6">
+    <h2 class="text-xl font-semibold text-white mb-3">知识卡片结构</h2>
+    <p class="text-[#94a3b8] mb-4">每张卡片统一遵循五段式结构，面向技术思维优化：</p>
+    <div class="grid grid-cols-1 md:grid-cols-5 gap-3 text-center">
+      {['🎯 问题', '📐 理论', '⚙️ 机制', '🎮 应用', '✅ 验证'].map((step, i) => (
+        <div class="bg-[#363650] rounded-lg p-3">
+          <div class="text-sm font-medium text-white">{step}</div>
+        </div>
+      ))}
+    </div>
+  </section>
+</KnowledgeLayout>

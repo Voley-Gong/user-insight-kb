@@ -1,0 +1,9 @@
+{
+  "provider": "openai",
+  "apiKey": "YOUR_API_KEY_HERE",
+  "model": "gpt-4o",
+  "baseUrl": "https://api.openai.com/v1",
+  "maxCardsPerRun": 1,
+  "targetCardsPerModule": 50,
+  "projectRoot": "D:\\mimoSpace\\user-insight-kb"
+}
