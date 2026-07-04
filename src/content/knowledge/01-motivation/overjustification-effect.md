@@ -1,7 +1,7 @@
 ---
 id: "overjustification-effect"
 title: "过度合理性效应：奖励如何杀死内在动机"
-module: "01-motivation"
+module: "动机与需求"
 tags: ["过度合理性", "内在动机", "奖励设计", "动机挤占"]
 difficulty: "进阶"
 prerequisites: ["intrinsic-motivation", "reward-types", "sdt"]

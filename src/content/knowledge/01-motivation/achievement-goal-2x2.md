@@ -1,7 +1,7 @@
 ---
 id: "achievement-goal-2x2"
 title: "成就目标2×2模型：为什么同样是'冲分'，有人越战越勇，有人心态爆炸"
-module: "01-motivation"
+module: "动机与需求"
 tags: ["成就目标", "approach-avoidance", "mastery-performance", "动机定向", "成就行为"]
 difficulty: "高级"
 prerequisites: ["need-for-achievement", "goal-setting-theory", "regulatory-focus", "competence-loop"]

@@ -1,7 +1,7 @@
 ---
 id: "goal-setting-theory"
 title: "目标设定理论：难度与动机的非线性关系"
-module: "01-motivation"
+module: "动机与需求"
 tags: ["目标设定", "任务难度", "动机调控", "挑战设计"]
 difficulty: "进阶"
 prerequisites: ["sdt", "competence-loop", "flow-theory-games"]

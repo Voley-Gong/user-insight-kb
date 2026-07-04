@@ -1,7 +1,7 @@
 ---
 id: "motivational-crowding-out"
 title: "动机挤出效应：你给玩家的奖励越多，他们反而越不想玩"
-module: "01-motivation"
+module: "动机与需求"
 tags: ["动机挤出", "内在动机", "奖励设计", "行为经济学", "长期留存"]
 difficulty: "高级"
 prerequisites: ["overjustification-effect", "sdt", "intrinsic-motivation", "reward-types"]

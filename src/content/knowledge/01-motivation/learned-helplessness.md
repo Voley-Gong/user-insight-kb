@@ -1,7 +1,7 @@
 ---
 id: "learned-helplessness"
 title: "习得性无助：当玩家'学会了'放弃——比流失更可怕的沉默退化"
-module: "01-motivation"
+module: "动机与需求"
 tags: ["习得性无助", "归因风格", "玩家挫败", "动机崩溃", "控制感"]
 difficulty: "进阶"
 prerequisites: ["self-efficacy", "competence-loop", "sdt"]

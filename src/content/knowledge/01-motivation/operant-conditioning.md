@@ -1,7 +1,7 @@
 ---
 id: "operant-conditioning"
 title: "操作条件反射：斯金纳箱里的玩家行为塑造术"
-module: "01-motivation"
+module: "动机与需求"
 tags: ["操作条件反射", "行为塑造", "强化理论", "斯金纳"]
 difficulty: "进阶"
 prerequisites: ["variable-ratio-reward", "reward-types", "sdt"]

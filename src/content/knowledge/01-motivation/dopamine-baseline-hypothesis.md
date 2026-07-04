@@ -1,7 +1,7 @@
 ---
 id: "dopamine-baseline-hypothesis"
 title: "多巴胺基线假说：你游戏的奖励系统正在悄悄降低玩家的'快乐阈值'吗"
-module: "01-motivation"
+module: "动机与需求"
 tags: ["多巴胺基线", "奖励敏感化", "神经动机", "长期留存", "伦理设计"]
 difficulty: "高级"
 prerequisites: ["variable-ratio-reward", "hedonic-adaptation", "operant-conditioning"]

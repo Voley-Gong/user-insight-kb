@@ -1,7 +1,7 @@
 ---
 id: "reward-prediction-error-games"
 title: "奖赏预测误差：为什么'刚好超出预期'比'超大奖励'更能让玩家上头"
-module: "01-motivation"
+module: "动机与需求"
 tags: ["奖赏预测误差", "多巴胺", "惊喜设计", "奖励节奏", "神经动机"]
 difficulty: "高级"
 prerequisites: ["variable-ratio-reward", "operant-conditioning", "dopamine-baseline-hypothesis"]

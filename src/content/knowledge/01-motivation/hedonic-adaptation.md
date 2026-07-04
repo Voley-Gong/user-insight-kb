@@ -1,7 +1,7 @@
 ---
 id: "hedonic-adaptation"
 title: "享乐适应：为什么新版本上线第三天，玩家的快乐就回到了基线"
-module: "01-motivation"
+module: "动机与需求"
 tags: ["享乐适应", "动机衰减", "奖励敏感化", "情绪基线"]
 difficulty: "进阶"
 prerequisites: ["intrinsic-motivation", "motivation-decay", "reward-types", "variable-ratio-reward"]

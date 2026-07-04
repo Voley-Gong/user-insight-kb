@@ -1,7 +1,7 @@
 ---
 id: "zeigarnik-effect"
 title: "蔡加尼克效应：为什么未完成的任务比已完成的更让你念念不忘"
-module: "01-motivation"
+module: "动机与需求"
 tags: ["蔡加尼克效应", "未完成动机", "任务中断", "认知张力"]
 difficulty: "进阶"
 prerequisites: ["goal-gradient-effect", "completionism", "intrinsic-motivation"]

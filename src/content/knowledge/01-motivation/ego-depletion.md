@@ -1,7 +1,7 @@
 ---
 id: "ego-depletion"
 title: "自我损耗理论：为什么玩家连续做了三个艰难选择后，开始无脑选默认项"
-module: "01-motivation"
+module: "动机与需求"
 tags: ["自我损耗", "决策疲劳", "意志力", "认知资源", "grinding"]
 difficulty: "高级"
 prerequisites: ["motivational-intensity-theory", "goal-conflict-motivation", "cognitive-evaluation-theory"]

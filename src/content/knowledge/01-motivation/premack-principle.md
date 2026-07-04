@@ -1,7 +1,7 @@
 ---
 id: "premack-principle"
 title: "Premack 原理：用玩家想做的事驱动他们该做的事"
-module: "01-motivation"
+module: "动机与需求"
 tags: ["Premack原理", "行为排序", "动机设计", "任务链"]
 difficulty: "进阶"
 prerequisites: ["operant-conditioning", "reward-types", "intrinsic-motivation"]

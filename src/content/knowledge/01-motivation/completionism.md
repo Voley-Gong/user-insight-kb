@@ -1,7 +1,7 @@
 ---
 id: "completionism"
 title: "完成主义心理：为什么玩家必须'全清'才安心"
-module: "01-motivation"
+module: "动机与需求"
 tags: ["完成主义", "强迫收集", "成就动机", "蔡格尼克效应"]
 difficulty: "基础"
 prerequisites: ["achievement-system", "collection-motivation"]

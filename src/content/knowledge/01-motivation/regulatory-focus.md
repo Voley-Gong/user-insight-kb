@@ -1,7 +1,7 @@
 ---
 id: "regulatory-focus"
 title: "监管聚焦理论：为什么有的玩家追求巅峰，有的玩家只怕掉段"
-module: "01-motivation"
+module: "动机与需求"
 tags: ["监管聚焦", " promotion动机", "prevention动机", "目标导向", "个体差异"]
 difficulty: "进阶"
 prerequisites: ["sdt", "intrinsic-motivation", "achievement-system"]

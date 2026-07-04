@@ -1,7 +1,7 @@
 ---
 id: "sunk-cost"
 title: "沉没成本与留存：为什么玩家越投入越不舍得走"
-module: "01-motivation"
+module: "动机与需求"
 tags: ["沉没成本", "留存", "退出壁垒"]
 difficulty: "基础"
 prerequisites: ["loss-aversion-games", "endowment-effect"]

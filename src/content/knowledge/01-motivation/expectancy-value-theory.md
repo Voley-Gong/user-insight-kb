@@ -1,7 +1,7 @@
 ---
 id: "expectancy-value-theory"
 title: "期望价值理论：玩家不是在评估奖励好不好，而是在算一道乘法题"
-module: "01-motivation"
+module: "动机与需求"
 tags: ["期望价值理论", "动机决策", "任务价值", "成功预期"]
 difficulty: "进阶"
 prerequisites: ["goal-setting-theory", "need-for-achievement", "intrinsic-motivation"]

@@ -1,7 +1,7 @@
 ---
 id: "scarcity-principle"
 title: "稀缺性原理：为什么'只剩3个'比'无限供应'更让人想要"
-module: "01-motivation"
+module: "动机与需求"
 tags: ["稀缺性", "稀缺效应", "损失厌恶", "冲动消费"]
 difficulty: "进阶"
 prerequisites: ["loss-aversion-games", "fear-of-missing-out", "sdt"]

@@ -1,7 +1,7 @@
 ---
 id: "reactance-theory"
 title: "心理抗拒理论：为什么玩家越被限制越想突破——'别按这个按钮'效应"
-module: "01-motivation"
+module: "动机与需求"
 tags: ["心理抗拒", "逆反心理", "自主感", "动机冲突"]
 difficulty: "进阶"
 prerequisites: ["intrinsic-motivation", "player-agency", "sdt"]

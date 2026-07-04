@@ -1,7 +1,7 @@
 ---
 id: "cognitive-evaluation-theory"
 title: "认知评价理论：为什么同样的奖励，有的人被激励了，有的人被'收买'了"
-module: "01-motivation"
+module: "动机与需求"
 tags: ["认知评价理论", "内化动机", "自主性", "外部反馈"]
 difficulty: "进阶"
 prerequisites: ["sdt", "intrinsic-motivation", "overjustification-effect"]

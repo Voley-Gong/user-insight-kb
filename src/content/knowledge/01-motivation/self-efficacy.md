@@ -1,7 +1,7 @@
 ---
 id: "self-efficacy"
 title: "自我效能感：玩家说'我做不到'的那一刻，你的游戏已经输了"
-module: "01-motivation"
+module: "动机与需求"
 tags: ["自我效能", "信心", "胜任感", "动机"]
 difficulty: "进阶"
 prerequisites: ["sdt", "competence-loop"]

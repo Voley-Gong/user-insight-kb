@@ -1,7 +1,7 @@
 ---
 id: "curiosity-gap"
 title: "好奇心缺口理论：为什么'差一点就知道'比'完全知道'更让人抓心挠肝"
-module: "01-motivation"
+module: "动机与需求"
 tags: ["好奇心缺口", "信息缺口", "探索动机", "认知驱动"]
 difficulty: "进阶"
 prerequisites: ["intrinsic-motivation", "exploration-design", "reward-types"]

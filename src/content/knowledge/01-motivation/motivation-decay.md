@@ -1,7 +1,7 @@
 ---
 id: "motivation-decay"
 title: "动机衰减：为什么玩家第30天的热情只剩第1天的零头"
-module: "01-motivation"
+module: "动机与需求"
 tags: ["动机衰减", "留存", "疲劳", "新鲜感"]
 difficulty: "基础"
 prerequisites: ["intrinsic-motivation", "reward-types", "sdt"]

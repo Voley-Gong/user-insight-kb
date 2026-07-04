@@ -1,7 +1,7 @@
 ---
 id: "endowment-effect"
 title: "禀赋效应与玩家投入"
-module: "01-motivation"
+module: "动机与需求"
 tags: ["禀赋效应", "损失厌恶", "留存设计", "虚拟财产"]
 difficulty: "基础"
 prerequisites: ["sdt"]

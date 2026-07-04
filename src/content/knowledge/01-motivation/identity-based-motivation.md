@@ -1,7 +1,7 @@
 ---
 id: "identity-based-motivation"
 title: "身份认同动机理论：玩家不是在'玩游戏'，是在'成为某种人'"
-module: "01-motivation"
+module: "动机与需求"
 tags: ["身份认同", "自我概念", "长期留存", "社群认同", "角色融入"]
 difficulty: "高级"
 prerequisites: ["sdt", "social-belonging", "intrinsic-motivation"]

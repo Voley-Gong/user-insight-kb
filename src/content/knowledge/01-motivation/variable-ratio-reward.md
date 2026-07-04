@@ -1,7 +1,7 @@
 ---
 id: "variable-ratio-reward"
 title: "变比奖励强化：为什么'不知道什么时候会给'的奖励最让人上瘾"
-module: "01-motivation"
+module: "动机与需求"
 tags: ["变比强化", "操作性条件反射", "随机奖励", "上瘾机制"]
 difficulty: "进阶"
 prerequisites: ["reward-types", "intrinsic-motivation", "sdt"]

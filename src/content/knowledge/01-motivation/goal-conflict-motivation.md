@@ -1,7 +1,7 @@
 ---
 id: "goal-conflict-motivation"
 title: "目标冲突动机：当玩家同时想做好三件事，结果一件都不想做"
-module: "01-motivation"
+module: "动机与需求"
 tags: ["目标冲突", "动机冲突", "多目标", "优先级", "决策瘫痪"]
 difficulty: "进阶"
 prerequisites: ["goal-setting-theory", "regulatory-focus", "expectancy-value-theory"]

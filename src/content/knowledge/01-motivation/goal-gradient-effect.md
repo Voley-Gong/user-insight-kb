@@ -1,7 +1,7 @@
 ---
 id: "goal-gradient-effect"
 title: "目标梯度效应：为什么玩家在'快到了'的时候最疯狂"
-module: "01-motivation"
+module: "动机与需求"
 tags: ["目标梯度", "动机放大", "进度感知", "行为经济学"]
 difficulty: "进阶"
 prerequisites: ["motivation-decay", "reward-types", "sunk-cost"]
