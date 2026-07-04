@@ -14,10 +14,24 @@ export async function getStaticPaths() {
 const { moduleData: mod } = Astro.props;
 const allCards = await getCollection('knowledge');
 
-const moduleCards = allCards.filter((c) => {
-  const cardModule = c.data.module;
-  return cardModule === mod.title || c.id.startsWith(mod.slug.replace('-', '/'));
-});
+const difficultyOrder = { '基础': 0, '进阶': 1, '高级': 2 };
+
+const moduleCards = allCards
+  .filter((c) => {
+    const cardModule = c.data.module;
+    return cardModule === mod.title || c.id.startsWith(mod.slug.replace('-', '/'));
+  })
+  .sort((a, b) => {
+    const diff = (difficultyOrder[a.data.difficulty] ?? 99) - (difficultyOrder[b.data.difficulty] ?? 99);
+    if (diff !== 0) return diff;
+    return a.data.title.localeCompare(b.data.title, 'zh-Hans-CN');
+  });
+
+const difficultyGroups = [
+  { level: '基础', icon: '🟢', cards: moduleCards.filter((c) => c.data.difficulty === '基础') },
+  { level: '进阶', icon: '🟡', cards: moduleCards.filter((c) => c.data.difficulty === '进阶') },
+  { level: '高级', icon: '🔴', cards: moduleCards.filter((c) => c.data.difficulty === '高级') },
+].filter((g) => g.cards.length > 0);
 ---
 
 <KnowledgeLayout title={mod.title}>
@@ -32,18 +46,28 @@ const moduleCards = allCards.filter((c) => {
   </div>
 
   {moduleCards.length > 0 ? (
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-      {moduleCards.map((card) => (
-        <CardView
-          id={card.id.replace('.md', '')}
-          title={card.data.title}
-          module={card.data.module}
-          tags={card.data.tags}
-          difficulty={card.data.difficulty}
-          status={card.data.status}
-        />
-      ))}
-    </div>
+    difficultyGroups.map((group) => (
+      <div class="mb-10">
+        <div class="flex items-center gap-2 mb-4">
+          <span class="text-lg">{group.icon}</span>
+          <h2 class="text-lg font-semibold text-white">{group.level}</h2>
+          <span class="text-sm text-[#64748b]">· {group.cards.length} 篇</span>
+          <div class="flex-1 h-px bg-[#334155] ml-2"></div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          {group.cards.map((card) => (
+            <CardView
+              id={card.id.replace('.md', '')}
+              title={card.data.title}
+              module={card.data.module}
+              tags={card.data.tags}
+              difficulty={card.data.difficulty}
+              status={card.data.status}
+            />
+          ))}
+        </div>
+      </div>
+    ))
   ) : (
     <div class="bg-[#2a2a3e] border border-[#334155] rounded-xl p-8 text-center">
       <p class="text-[#94a3b8] text-lg mb-2">该模块暂无内容</p>
