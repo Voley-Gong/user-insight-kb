@@ -6,7 +6,7 @@ tags: ["变比强化", "操作性条件反射", "随机奖励", "上瘾机制"]
 difficulty: "进阶"
 prerequisites: ["reward-types", "intrinsic-motivation", "sdt"]
 related: ["overjustification-effect", "motivation-decay", "goal-gradient-effect"]
-status: "draft"
+status: "published"
 author: "agent-c3po"
 date: "2026-07-03"
 ---

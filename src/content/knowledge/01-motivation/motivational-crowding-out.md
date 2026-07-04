@@ -6,7 +6,7 @@ tags: ["动机挤出", "内在动机", "奖励设计", "行为经济学", "长�
 difficulty: "高级"
 prerequisites: ["overjustification-effect", "sdt", "intrinsic-motivation", "reward-types"]
 related: ["motivation-decay", "dopamine-baseline-hypothesis", "hedonic-adaptation"]
-status: "draft"
+status: "published"
 author: "agent-auto"
 date: "2026-07-04"
 ---

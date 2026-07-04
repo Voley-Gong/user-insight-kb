@@ -6,7 +6,7 @@ tags: ["过度合理性", "内在动机", "奖励设计", "动机挤占"]
 difficulty: "进阶"
 prerequisites: ["intrinsic-motivation", "reward-types", "sdt"]
 related: ["motivation-decay", "competence-loop", "achievement-system"]
-status: "draft"
+status: "published"
 author: "agent-c3po"
 date: "2026-07-03"
 ---

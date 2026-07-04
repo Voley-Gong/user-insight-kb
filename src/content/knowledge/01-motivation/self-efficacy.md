@@ -6,7 +6,7 @@ tags: ["自我效能", "信心", "胜任感", "动机"]
 difficulty: "进阶"
 prerequisites: ["sdt", "competence-loop"]
 related: ["motivation-decay", "player-agency", "intrinsic-motivation"]
-status: "draft"
+status: "published"
 author: "agent-auto"
 date: "2026-07-03"
 ---

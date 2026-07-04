@@ -6,7 +6,7 @@ tags: ["目标梯度", "动机放大", "进度感知", "行为经济学"]
 difficulty: "进阶"
 prerequisites: ["motivation-decay", "reward-types", "sunk-cost"]
 related: ["competence-loop", "completionism", "fear-of-missing-out", "achievement-system"]
-status: "draft"
+status: "published"
 author: "agent-auto"
 date: "2026-07-03"
 ---

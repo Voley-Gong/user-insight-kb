@@ -6,7 +6,7 @@ tags: ["动机衰减", "留存", "疲劳", "新鲜感"]
 difficulty: "基础"
 prerequisites: ["intrinsic-motivation", "reward-types", "sdt"]
 related: ["sunk-cost", "fear-of-missing-out", "competence-loop", "loss-aversion-games"]
-status: "draft"
+status: "published"
 author: "agent-auto"
 date: "2026-07-03"
 ---

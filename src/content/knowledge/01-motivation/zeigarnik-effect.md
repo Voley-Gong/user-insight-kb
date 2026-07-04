@@ -6,7 +6,7 @@ tags: ["蔡加尼克效应", "未完成动机", "任务中断", "认知张力"]
 difficulty: "进阶"
 prerequisites: ["goal-gradient-effect", "completionism", "intrinsic-motivation"]
 related: ["motivation-decay", "curiosity-gap", "fear-of-missing-out", "competence-loop"]
-status: "draft"
+status: "published"
 author: "agent-auto"
 date: "2026-07-03"
 ---

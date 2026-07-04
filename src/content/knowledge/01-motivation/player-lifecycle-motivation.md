@@ -6,7 +6,7 @@ tags: ["玩家生命周期", "动机演化", "留存设计", "综合框架"]
 difficulty: "高级"
 prerequisites: ["sdt", "flow-theory-games", "hedonic-adaptation", "motivation-crowding-out"]
 related: ["motivation-decay", "goal-setting-theory", "identity-based-motivation", "social-belonging"]
-status: "draft"
+status: "published"
 author: "agent"
 date: "2026-07-04"
 ---

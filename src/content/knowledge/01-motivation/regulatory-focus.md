@@ -6,7 +6,7 @@ tags: ["监管聚焦", " promotion动机", "prevention动机", "目标导向", "
 difficulty: "进阶"
 prerequisites: ["sdt", "intrinsic-motivation", "achievement-system"]
 related: ["loss-aversion-games", "competence-loop", "pvp-motivation", "goal-gradient-effect"]
-status: "draft"
+status: "published"
 author: "agent-c3po"
 date: "2026-07-03"
 ---

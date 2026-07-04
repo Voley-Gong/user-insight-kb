@@ -6,7 +6,7 @@ tags: ["好奇心缺口", "信息缺口", "探索动机", "认知驱动"]
 difficulty: "进阶"
 prerequisites: ["intrinsic-motivation", "exploration-design", "reward-types"]
 related: ["competence-loop", "completionism", "fear-of-missing-out", "goal-gradient-effect"]
-status: "draft"
+status: "published"
 author: "agent-auto"
 date: "2026-07-03"
 ---

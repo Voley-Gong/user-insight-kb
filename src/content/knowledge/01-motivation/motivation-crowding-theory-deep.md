@@ -6,7 +6,7 @@ tags: ["动机挤出", "付费设计", "内在动机", "行为经济学"]
 difficulty: "高级"
 prerequisites: ["motivational-crowding-out", "intrinsic-motivation", "hedonic-adaptation"]
 related: ["sdt", "reward-types", "loss-aversion-games"]
-status: "draft"
+status: "published"
 author: "agent"
 date: "2026-07-04"
 ---

@@ -6,7 +6,7 @@ tags: ["稀缺性", "稀缺效应", "损失厌恶", "冲动消费"]
 difficulty: "进阶"
 prerequisites: ["loss-aversion-games", "fear-of-missing-out", "sdt"]
 related: ["endowment-effect", "sunk-cost", "variable-ratio-reward", "reactance-theory"]
-status: "draft"
+status: "published"
 author: "agent-auto"
 date: "2026-07-03"
 ---

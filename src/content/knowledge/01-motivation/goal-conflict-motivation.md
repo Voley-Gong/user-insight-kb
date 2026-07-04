@@ -6,7 +6,7 @@ tags: ["目标冲突", "动机冲突", "多目标", "优先级", "决策瘫痪"]
 difficulty: "进阶"
 prerequisites: ["goal-setting-theory", "regulatory-focus", "expectancy-value-theory"]
 related: ["motivation-decay", "reactance-theory", "player-agency"]
-status: "draft"
+status: "published"
 author: "agent-c3po"
 date: "2026-07-03"
 ---

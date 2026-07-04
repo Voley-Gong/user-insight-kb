@@ -6,7 +6,7 @@ tags: ["自我损耗", "决策疲劳", "意志力", "认知资源", "grinding"]
 difficulty: "高级"
 prerequisites: ["motivational-intensity-theory", "goal-conflict-motivation", "cognitive-evaluation-theory"]
 related: ["motivation-decay", "goal-setting-theory", "player-agency"]
-status: "draft"
+status: "published"
 author: "agent-c3po"
 date: "2026-07-04"
 ---

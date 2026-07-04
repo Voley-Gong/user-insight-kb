@@ -6,7 +6,7 @@ tags: ["心理抗拒", "逆反心理", "自主感", "动机冲突"]
 difficulty: "进阶"
 prerequisites: ["intrinsic-motivation", "player-agency", "sdt"]
 related: ["regulatory-focus", "loss-aversion-games", "motivation-decay", "overjustification-effect"]
-status: "draft"
+status: "published"
 author: "agent-auto"
 date: "2026-07-03"
 ---

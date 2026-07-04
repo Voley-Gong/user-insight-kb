@@ -6,7 +6,7 @@ tags: ["操作条件反射", "行为塑造", "强化理论", "斯金纳"]
 difficulty: "进阶"
 prerequisites: ["variable-ratio-reward", "reward-types", "sdt"]
 related: ["motivation-decay", "overjustification-effect", "goal-gradient-effect"]
-status: "draft"
+status: "published"
 author: "agent-c3po"
 date: "2026-07-03"
 ---

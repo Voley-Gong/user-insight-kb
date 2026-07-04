@@ -6,7 +6,7 @@ tags: ["期望价值理论", "动机决策", "任务价值", "成功预期"]
 difficulty: "进阶"
 prerequisites: ["goal-setting-theory", "need-for-achievement", "intrinsic-motivation"]
 related: ["self-efficacy", "competence-loop", "reward-types", "motivation-decay"]
-status: "draft"
+status: "published"
 author: "agent-auto"
 date: "2026-07-03"
 ---

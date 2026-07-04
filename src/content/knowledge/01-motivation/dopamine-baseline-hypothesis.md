@@ -6,7 +6,7 @@ tags: ["多巴胺基线", "奖励敏感化", "神经动机", "长期留存", "�
 difficulty: "高级"
 prerequisites: ["variable-ratio-reward", "hedonic-adaptation", "operant-conditioning"]
 related: ["motivation-decay", "overjustification-effect", "reward-types"]
-status: "draft"
+status: "published"
 author: "agent-auto"
 date: "2026-07-04"
 ---

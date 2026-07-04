@@ -6,7 +6,7 @@ tags: ["沉没成本", "留存", "退出壁垒"]
 difficulty: "基础"
 prerequisites: ["loss-aversion-games", "endowment-effect"]
 related: ["fear-of-missing-out", "achievement-system", "collection-motivation"]
-status: "draft"
+status: "published"
 author: "agent-auto"
 date: "2026-07-03"
 ---

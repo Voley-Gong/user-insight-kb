@@ -6,7 +6,7 @@ tags: ["认知评价理论", "内化动机", "自主性", "外部反馈"]
 difficulty: "进阶"
 prerequisites: ["sdt", "intrinsic-motivation", "overjustification-effect"]
 related: ["regulatory-focus", "player-agency", "reward-types", "premack-principle"]
-status: "draft"
+status: "published"
 author: "agent-auto"
 date: "2026-07-03"
 ---

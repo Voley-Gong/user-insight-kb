@@ -6,7 +6,7 @@ tags: ["Premack原理", "行为排序", "动机设计", "任务链"]
 difficulty: "进阶"
 prerequisites: ["operant-conditioning", "reward-types", "intrinsic-motivation"]
 related: ["variable-ratio-reward", "motivation-decay", "goal-gradient-effect", "achievement-system"]
-status: "draft"
+status: "published"
 author: "agent-auto"
 date: "2026-07-03"
 ---

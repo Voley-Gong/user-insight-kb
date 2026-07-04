@@ -6,7 +6,7 @@ tags: ["目标设定", "任务难度", "动机调控", "挑战设计"]
 difficulty: "进阶"
 prerequisites: ["sdt", "competence-loop", "flow-theory-games"]
 related: ["goal-gradient-effect", "need-for-achievement", "regulatory-focus", "achievement-system"]
-status: "draft"
+status: "published"
 author: "agent-c3po"
 date: "2026-07-03"
 ---

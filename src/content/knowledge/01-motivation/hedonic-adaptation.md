@@ -6,7 +6,7 @@ tags: ["享乐适应", "动机衰减", "奖励敏感化", "情绪基线"]
 difficulty: "进阶"
 prerequisites: ["intrinsic-motivation", "motivation-decay", "reward-types", "variable-ratio-reward"]
 related: ["overjustification-effect", "sunk-cost", "goal-gradient-effect", "curiosity-gap"]
-status: "draft"
+status: "published"
 author: "agent-auto"
 date: "2026-07-03"
 ---
